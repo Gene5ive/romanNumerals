@@ -20,13 +20,13 @@ describe('fourToEight', function() {
 });
 
 describe('nineToEighteen', function() {
-   it("returns the roman numeral for any number below 19", function() {
+   it("returns the roman numeral for 9", function() {
      expect(nineToEighteen(9)).to.eql("IX");
    });
-   it("returns the roman numeral for any number below 19", function() {
+   it("returns the roman numeral for 10", function() {
      expect(nineToEighteen(10)).to.eql("X");
    });
-   it("returns the roman numeral for any number below 19", function() {
+   it("returns the roman numeral for 15", function() {
      expect(nineToEighteen(15)).to.eql("XV");
    });
  });

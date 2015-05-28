@@ -13,9 +13,7 @@ var fourToEight = function(number) {
   } else {
     romanNumeral.push("V");
     var newNum = number - 5;
-    for(var i = 1; i <= newNum; i++) {
-      romanNumeral.push("I");
-    }
+    romanNumeral.push(belowFour(newNum));
   }
   return romanNumeral.join("");
 };
@@ -28,7 +26,6 @@ var nineToEighteen = function(number) {
     if (number === 10) {
     romanNumeral.push("X");
     } else {
-      debugger;
       romanNumeral.push("X");
       var newNum = number - 10;
         if (newNum < 4) {
