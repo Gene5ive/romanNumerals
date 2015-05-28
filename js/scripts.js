@@ -19,3 +19,24 @@ var fourToEight = function(number) {
   }
   return romanNumeral.join("");
 };
+
+var nineToEighteen = function(number) {
+  var romanNumeral = [];
+  if (number === 9) {
+    romanNumeral.push("IX");
+  } else {
+    if (number === 10) {
+    romanNumeral.push("X");
+    } else {
+      debugger;
+      romanNumeral.push("X");
+      var newNum = number - 10;
+        if (newNum < 4) {
+          romanNumeral.push(belowFour(newNum));
+        } else {
+      romanNumeral.push(fourToEight(newNum));
+      }
+    }
+  }
+  return romanNumeral.join("");
+};
